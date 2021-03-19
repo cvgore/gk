@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    width="300"
+    height="200"
+    viewBox="0 0 300 200"
+    preserveAspectRatio="xMidYMid">
+    <defs>
+        <g id="pv" stroke="none" fill="currentColor">
+            <polygon points="20,0 40,100 0,100" />
+        </g>
+        <g id="bm" stroke="none" fill="red">
+            <rect x="0" y="0" width="200" height="20" transform="rotate(15)" />
+        </g>
+        <g id="cs" stroke="#000" stroke-width="2" fill="none">
+            <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0" to="360"
+                dur="3s"
+                repeatCount="indefinite"
+            />
+            <polygon points="50,0
+                35.35533905932738,35.35533905932738
+                3.061616997868383e-15,50
+                -35.35533905932737,35.35533905932738
+                -50,6.123233995736766e-15
+                -35.355339059327385,-35.35533905932737
+                -9.184850993605149e-15,-50
+                35.35533905932737,-35.355339059327385
+            " />
+        </g>
+        <g id="al">
+            <use xlink:href="#cs" transform="translate(100,110) scale(.5)" />
+            <use xlink:href="#cs" transform="translate(195,135) scale(.5)" />
+            <use xlink:href="#bm" transform="translate(100,105) scale(.5)" />
+            <use xlink:href="#pv" transform="translate(130,120) scale(.75)" />
+        </g>
+    </defs>
+
+    <use xlink:href="#al" color="#00f" />
+    <use xlink:href="#al" color="#808" transform="scale(.8) translate(-70,-80)"/>
+    <use xlink:href="#al" color="#090" transform="scale(.7) translate(200,-80)"/>
+
+</svg>
